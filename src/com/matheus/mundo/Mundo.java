@@ -59,20 +59,7 @@ public class Mundo {
 									Jogo.tamanho,Jogo.spritesheet.getSprite(64 , 32, Jogo.tamanho, Jogo.tamanho),1);
 							Jogo.entidades.add(i);
 							Jogo.inimigo.add(i);
-						}  else if (pixels[atual] == 0xFF008048) {
-							criarTilesEmbaixoDaCasa(xx, yy, 2, 2);
-							objetos.add(new Objetos(xx * Jogo.tamanho, yy * Jogo.tamanho, Objetos.casa_32X32));
-						}else if (pixels[atual] == 0xFFFF63CD) {
-							criarTilesEmbaixoDaCasa(xx, yy, 5, 4);
-							objetos.add(new Objetos(xx * Jogo.tamanho, yy * Jogo.tamanho, Objetos.bar));
-						}else if (pixels[atual] == 0xFF7F3F76) {
-							criarTilesEmbaixoDaCasa(xx, yy, 4, 3);
-							if (Jogo.rand.nextInt(100) < 50) {
-								objetos.add(new Objetos(xx * Jogo.tamanho, yy * Jogo.tamanho, Objetos.casa_64X48_1));
-							} else {
-								objetos.add(new Objetos(xx * Jogo.tamanho, yy * Jogo.tamanho, Objetos.casa_64X48_2));
-							}
-						}
+						} 
 					}
 				}
 			}
